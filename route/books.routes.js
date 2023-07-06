@@ -7,7 +7,7 @@ bookRouter.get("/getBook",async(req,res)=>{
 
     try {
         const data = await BookModel.find()
-        res.status(200).send({"'books":data});
+        res.status(200).send({"books":data});
     } catch (err) {
         res.status(200).send(err.message);
     }
